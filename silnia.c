@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdbool.h>
 
 long licz_silnie(int podstawa) {
     if (podstawa == 0) {
@@ -15,15 +16,24 @@ long licz_silnie(int podstawa) {
 
 }
 
-//bool test_licz_silnie(){ if(licz_silnie(0) == 1) return true;
- //   return false;
-   // }
+bool test_licz_silnie(){                // ta częścć sprawdza czy program działa włąściwie
+    if(licz_silnie(0) == 1) {
+        printf("test_licz_silnie() przechodzi");
+        return true;
+    }else{
+        printf("test_licz_silnie nie dziala!!");
+
+        return false;
+    }
+
+}
 
 
 
 
 
 int main() {
+// test_licz_silnie(); tu musimy zadeklarowac funkcje testu w głównym programie pozostała część 
       long podstawa;
     long wynik;
 
