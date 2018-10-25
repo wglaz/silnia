@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdbool.h>
 
-//#define TEST// jeżeli to ustawie widoczne to bedzie robic test a nie  program 
+//#define TEST// jeżeli to ustawie widoczne to bedzie robic test a nie  program
 
 long licz_silnie(int podstawa) {
     if (podstawa == 0) {
