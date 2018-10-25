@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include<stdbool.h>
 
+//#define TEST// jeżeli to ustawie widoczne to bedzie robic test a nie  program 
+
 long licz_silnie(int podstawa) {
     if (podstawa == 0) {
         return 1;
@@ -33,7 +35,10 @@ bool test_licz_silnie(){                // ta częścć sprawdza czy program dzi
 
 
 int main() {
-// test_licz_silnie(); tu musimy zadeklarowac funkcje testu w głównym programie pozostała część 
+
+#ifndef TEST
+
+// test_licz_silnie(); tu musimy zadeklarowac funkcje testu w głównym programie pozostała część
       long podstawa;
     long wynik;
 
@@ -50,4 +55,10 @@ else{
     }
 
     return 0;
+
+#else
+ test_licz_silnie();
+#endif
+
+
 }
